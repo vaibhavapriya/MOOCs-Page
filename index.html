@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous">
 </head>
 <body class="flex flex-col justify-center content-center">
-    <header class="p-2.5 flex flex-row justify-around">
+    <header class="p-2.5 flex flex-row justify-around items-center">
         <div class=""><!-- icon --></div>
         <nav class="">
             <a href="#home" class="font-bold">Home</a>
@@ -31,7 +31,7 @@
             <button type="button" class="rounded-lg p-2.5 px-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white">Signup</button>
         </div>       
     </header>
-    <section id="home" class="p-2.5  flex flex-row justify-center items-center bg-gradient-to-bl from-indigo-500 to-purple-500 text-white">
+    <section id="home" class="p-5 md:p-10 lg:p-40 flex flex-row justify-center items-center bg-gradient-to-bl from-indigo-500 to-purple-500 text-white">
         <div class="">
             <h4 class="">Successful coaches are visionaries</h4>
             <h1 class="font-bold  text-4xl">Good <span class="text-indigo-600">coaching</span> is good teaching & nothing else.</h1>
@@ -40,12 +40,24 @@
                 <button type="button" class="rounded-lg p-2.5 px-2.5 font-medium">Get Free Consultation</button>
             </div>
             <div class="">
+                <!-- <form>   
+                    <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                            </svg>
+                        </div>
+                        <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+                        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    /div>
+                </form> -->
                 <input class="">
                 <!-- What do you want to learn today? -->
                 <button type="button" class="rounded-lg p-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white">icon Search</button>
             </div>
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-col lg:flex-row">
             <div class="text-xs">
                 <p class="">Shyam</p>
                 <p class="font-thin">In a coaching role, you ask the questions and rely more on your 
@@ -58,155 +70,162 @@
             </div>
         </div>
     </section>
-    <section id="partners" class="p-2.5 bg-gradient-to-b from-indigo-500 to-purple-500">
+    <section id="partners" class="bg-gradient-to-b from-indigo-500 to-purple-500 p-5 ">
         <!-- brands -->
          <div class="flex flex-row justify-evenly ">
-            <img src="images\Link ⏵ brand6.png.png" alt="" width="">
-            <img src="images\Link ⏵ brand5.png.png" alt="" width="">
+            <img src="images\Link ⏵ brand6.png.png" alt="" class="width: auto;">
+            <img src="images\Link ⏵ brand5.png.png" alt="" width="10%" class="height: auto;">
             <img src="images\Link ⏵ brand3.png.png" alt="" width="">
             <img src="images\Link ⏵ brand1.png.png" alt="" width="">
             <img src="images\Link ⏵ brand6.png.png" alt="" width="">
             <img src="images\Link ⏵ brand3.png.png" alt="" width="">
          </div>
     </section>
-    <section id="courses" class="p-2.5 flex flex-col items-center bg-blue-50">
-        <div class="">
-            <h2 class="font-bold text-2xl ">Featured <span class="text-indigo-600">Course</span></h2>
-            <h3 class="text-lg font-bold">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</h3>
+    <section id="courses" class="flex flex-col items-center bg-blue-50 p-5 md:p-10 lg:p-40">
+        <div class="items-center">
+            <h2 class="font-bold text-2xl text-center ">Featured <span class="text-indigo-600">Course</span></h2>
+            <h3 class="text-lg font-bold p-5">THE FEATURE COURSES ARE WE INVENTED OUR TEACHING PART</h3>
         </div>
         <div class="grid grid-cols-3 gap-3">
-            <div class="">
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images\Mask group.png">
                 <div class="font-bold">
-                    <div class="font-thin text-xs"><div>1209 Students</div><div>0h 57m</div></div>
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div class="">Motion Graphics: Create a Nice Typography Animation</div>
-                    <div class=""><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
-            <div>
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images\Mask group (1).png">
-                <div>
-                    <div><div>1209 Students</div><div>0h 57m</div></div>
+                <div class="font-bold">
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div>Advance PHP knowledge with JS to make smart web</div>
-                    <div><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
-            <div>
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images/Mask group (2).png">
-                <div>
-                    <div><div>1209 Students</div><div>0h 57m</div></div>
+                <div  class="font-bold">
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div>Education Software and PHP and JS System Script</div>
-                    <div><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
-            <div>
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images\Mask group (3).png">
-                <div>
-                    <div><div>1209 Students</div><div>0h 57m</div></div>
+                <div  class="font-bold">
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div>The Complete Financial Analyst Training & Investing</div>
-                    <div><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
-            <div>
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images\Mask group (4).png">
-                <div>
-                    <div><div>1209 Students</div><div>0h 57m</div></div>
+                <div  class="font-bold">
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div>Marketing 2023: Complete Guide To Instagram Growth</div>
-                    <div><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
-            <div>
+            <div class="bg-white p-1 rounded-xl">
                 <img src="images\Mask group (5).png">
-                <div>
-                    <div><div>1209 Students</div><div>0h 57m</div></div>
+                <div class="font-bold">
+                    <div class="font-thin text-xs flex flex-row justify-between"><div>1209 Students</div><div>0h 57m</div></div>
                     <div>Learn 3D Modelling and Design for Beginners</div>
-                    <div><div>Rs 499</div><div>carticon</div></div>
+                    <div class="flex flex-row justify-between"><div>Rs 499</div><div>carticon</div></div>
                 </div>
             </div>
         </div>
-        <div>
+        <div class="p-5">
             <button type="button" class="rounded-lg p-2.5 px-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white font-medium">Explore courses</button>
         </div>
     </section>
-    <section id="whyus" class="p-2.5 flex flex-col items-center justify-center  bg-gradient-to-bl from-indigo-500 to-indigo-200 text-white">
+    <section id="whyus" class="p-5 md:p-10 lg:p-40 flex flex-col items-center justify-center  bg-gradient-to-bl from-indigo-500 to-indigo-200 text-white">
         <div>
-            <h2 class="font-bold text-2xl">Why <span class="text-indigo-800">learn</span> with our courses?</h2>
-            <p>We are providing the best courses and top classes.And extradinery placement training.....</p>
+            <h2 class="font-bold text-2xl text-center">Why <span class="text-indigo-800">learn</span> with our courses?</h2>
+            <p class="p-5">We are providing the best courses and top classes.And extradinery placement training.....</p>
         </div>
         <div class="flex flex-row font-bold">
-            <div ><!-- icon title para -->
+            <div class="w-4/12 m-2.5 flex flex-col items-center"><!-- icon title para -->
                 <img src="images\Icon.png">
                 <div>01.Learn</div>
                 <div>Learn continually. There is always “one more thing” to learn.</div>
             </div>
-            <div><!-- icon title para -->
+            <div class="w-4/12 m-2.5 flex flex-col items-center"><!-- icon title para -->
                 <img src="images\Icon (1).png">
                 <div>02.Graduate</div>
                 <div>Be bold,be courageous, be your best.</div>
-            </div>
-            <div><!-- icon title para -->
+            </div >
+            <div class="w-4/12 m-2.5 flex flex-col items-center"><!-- icon title para -->
                 <img src="images\Icon (2).png">
                 <div>03.Work</div>
                 <div>Great companies are built in the office,with hard work put in by team.</div>
             </div>           
         </div>
     </section>
-    <section id="category" class="p-2.5 flex flex-col items-center justify-center bg-blue-50 font-bold text-gray-700">
+    <section id="category" class="p-5 md:p-10 lg:p-40 flex flex-col items-center justify-center bg-blue-50 font-bold text-gray-700">
         <div class="">
-            <h2 class="text-2xl text-black">Top <span class="text-indigo-800">Categories</span></h2>
-            <p>100+ unique online course list designs</p>
+            <h2 class="text-2xl text-black text-center">Top <span class="text-indigo-800">Categories</span></h2>
+            <p class="p-5">100+ unique online course list designs</p>
         </div>
-        <div class="grid grid-cols-6 gap-3 flex justify-center">
-            <div>
+        <div class="grid grid-cols-3 lg:grid-cols-6 gap-3 flex justify-center">
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image.png">
-                <div>Digtal Marketing</div>
+                <div>Digtal </div><div>Marketing</div>
                 <div class="text-xs">25 Courses</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image (1).png">
-                <div>Web Development</div>
+                <div>Web </div><div>Development</div>
                 <div class="text-xs">16 Courses</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image (2).png">
-                <div>Art & Humanities</div>
+                <div>Art & </div><div>Humanities</div>
                 <div class="text-xs">76 Courses</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image (4).png">
-                <div>Personal Development</div>
+                <div>Personal </div><div>Development</div>
                 <div class="text-xs">22 Courses</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image (5).png">
-                <div>IT and Software</div>
+                <div>IT & </div><div>Software</div>
                 <div class="text-xs">110 Courses</div>
             </div>
-            <div>
+            <div class="flex flex-col items-center bg-white p-1 rounded-xl">
                 <img src="images\div.features-box-image (6).png">
-                <div>Graphic Design</div>
+                <div>Graphic</div><div>Design</div>
                 <div class="text-xs">85 Courses</div>
             </div>
         </div>
     </section>
-    <section id="subscribe" class="p-2.5 bg-[url('..\images\Bg (1).png')]">
-        <div class="text-white">
-            <h2 class="font-bold text-3xl">Subscribe For Get Update Every New Courses</h2>
-            <div>20k+ students daily learn with Eduvi. Subscribe for new courses.</div>
+    <section id="subscribe" class="p-5 md:p-10 lg:p-40 bg-gradient-to-b from-indigo-500 to-purple-500 ">
+        <div class="text-white text-center gap-3">
+            <h2 class="font-bold text-3xl pb-1">Subscribe For Get Update</h2>
+            <h2 class="font-bold text-3xl pb-2">Every New Courses</h2>
+            <div class="pb-2">20k+ students daily learn with Eduvi. Subscribe for new courses.</div>
             <div class="font-bold">
+                <!-- <form action="">
+                    <input type="search" id="search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+                    <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+                    <input type="email" maxlength="50" required placeholder="Enter your email address" class="rounded-lg p-2.5 px-2.5 ">
+                    <button class="text-base inline-block rounded-lg p-2.5 px-2.5 bg-blue-500">Subscribe</button>
+                </form> -->
                 <input type="email" enter your email>
                 <button type="button" class="rounded-lg p-2.5 px-2.5 bg-blue-500">Subscribe</button>
             </div>
         </div>
     </section>
-    <section id="video">
+    <section id="video" class="p-5 md:p-10 lg:p-40 ">
         <div>
             <!-- link -->
         </div>
     </section>
-    <section id="testimonies" class="p-2.5 bg-gradient-to-b from-blue-200 to-blue-500 text-gray-700">
+    <section id="testimonies" class="p-5 md:p-10 lg:p-40 bg-gradient-to-b from-blue-200 to-blue-500 text-gray-700">
         <div class="font-bold">
-            <h2 class="text-2xl font-bold text-indigo-800">Testimonials</h2>
+            <h2 class="text-2xl font-bold text-indigo-800 text-center">Testimonials</h2>
             <p>What our student say about us</p>
         </div>
         <div class="text-xs">
@@ -236,38 +255,38 @@
             <!-- arrows -->
         </div>
     </section>
-    <section id="nav" class="p-2.5 flex flex-row bg-gradient-to-bl from-indigo-500 to-purple-500">
+    <section id="nav" class="p-5 md:p-10 flex flex-row bg-gradient-to-bl from-indigo-500 to-purple-500 gap-3">
         <div>
             <div class="font-bold text-lg">Connect</div>
             <img>
             <p>Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony, Mailardevpally, Nawab Saheb Kunta, Hyd, 500005</p>
         </div>
-        <div class="font-bold">
-            <div class="text-lg">Classes</div>
+        <div class="font-semibold">
+            <div class="text-lg font-bold">Classes</div>
             <p>Classroom courses</p>
             <p>Virtual classroom courses</p>
             <p>E-learning courses</p>
             <p>Video Courses</p>
             <p>Offline Courses</p>
         </div>
-        <div class="font-bold">
-            <div class="text-lg">Community</div>
+        <div class="font-semibold">
+            <div class="text-lg font-bold">Community</div>
             <p>Learners</p>
             <p>Parteners</p>
             <p>Developers</p>
             <p>Transactions</p>
             <p>Blog</p>
         </div>
-        <div class="font-bold">
-            <div class="text-lg">Quick links</div>
+        <div class="font-semibold">
+            <div class="text-lg font-bold">Quick links</div>
             <p>Home</p>
             <p>Professional Education</p>
             <p>Courses</p>
             <p>Admissions</p>
             <p>Programs</p>
         </div>
-        <div class="font-bold">
-            <div class="text-lg">More</div>
+        <div class="font-semibold">
+            <div class="text-lg font-bold">More</div>
             <p>Press</p>
             <p>Investors</p>
             <p>Terms</p>
