@@ -3,6 +3,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>e-learning</title>
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -10,29 +11,29 @@
 </head>
 <body class="flex flex-col justify-center content-center">
     <header class="p-2.5 flex flex-row justify-around items-center">
-        <div class=""><!-- icon --></div>
+        <div class="flex flex-row">
+            <img src="images/—Pngtree—e learning programmer with a_6712439.png" class="h-8"/>
+            <span>learning</span>
+        </div>
         <nav class="">
             <a href="#home" class="font-bold">Home</a>
             <a href="" class="font-bold">About</a>
             <a href="" class="font-bold">Courses</a>
-            <a href="" class="font-bold">contact</a>
+            <a href="" class="font-bold">Contact</a>
         </nav>
-        <div class="">
+        <div class="flex flex-row md:gap-2 ">
             <!-- cart,profile,search icons -->
-            <i class="fas fa-solid fa-cart-shopping"></i>
-            <i class="fa fa-solid fa-cart-plus"></i>
-            <i class="fa fa-solid fa-circle-user"></i>
-            <i class="fa fa-solid fa-user"></i>
-            <i class="fa fa-solid fa-magnifying-glass"></i>    
-            <i></i>
+            <img src="images\cart-shopping-solid.svg" class="h-4"/>
+            <img src="images\user-solid.svg" class="h-4"/>
+            <img src="images\magnifying-glass-solid.svg" class="h-4"/>
         </div>
         <div class="">
-            <button type="button" class="rounded-lg p-2.5 px-2.5">Login</button>
-            <button type="button" class="rounded-lg p-2.5 px-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white">Signup</button>
+            <button type="button" class="rounded-lg p-1 px-2.5 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 ...">Login</button>
+            <button type="button" class="rounded-lg p-1 px-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white ">Signup</button>
         </div>       
     </header>
     <section id="home" class="px-5 md:px-10 lg:px-40 flex flex-row justify-center items-center bg-gradient-to-bl from-indigo-500 to-purple-500 text-white">
-        <div class="">
+        <div class="flex flex-col gap-2">
             <h4 class="">Successful coaches are visionaries</h4>
             <h1 class="font-bold  text-4xl py-4">Good <span class="text-indigo-600">coaching</span> is good teaching & nothing else.</h1>
             <div class="font-medium">
@@ -41,16 +42,17 @@
             </div>
             <div class="">
                 <!-- <input id="search" type="search" placeholder="What do you want to learn today" autofocus required /> -->
-                <input type="search" id="default-search" class="block w-3/5 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What do you want to learn today" required />
-                <button type="button" class="rounded-lg p-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white">icon Search</button>
+                <input type="search" id="default-search" class=" w-2/5 p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="What do you want to learn today" required />
+                <button type="button" class="rounded-lg p-2.5 bg-gradient-to-br from-indigo-500 to-purple-500 text-white border-2 border-white">icon Search</button>
             </div>
         </div>
         <div class="flex flex-col lg:flex-row h-full">
-            <div class="text-xs">
+            <div class="text-xs p-4 py-10">
                 <p class="">Shyam</p>
-                <p class="font-thin">In a coaching role, you ask the questions and rely more on your 
-                    staff, who become the experts, to provide the information.</p>
-                <p class="font-thin">4.9</p>
+                <p class="font-thin">In a coaching role, you ask the </p>
+                <p class="font-thin"> questions and rely more on your staff, who become the experts,to provide  </p>
+                <p class="font-thin">the information.</p>
+                <p class="font-light text-indigo-800">4.9</p>
             </div>
             <!-- img -->
             <div class="flex justify-end items-end">
@@ -202,9 +204,11 @@
             </div>
         </div>
     </section>
-    <section id="video" class="p-5 md:p-10 lg:p-40 ">
-        <div>
-            <!-- link -->
+    <section id="video" class="p-5 md:p-10 lg:p-40 bg-gradient-to-b from-white to-blue-200">
+        <div class="flex items-center justify-center">
+            <video width="80%" controls>
+                <source src="movie.mp4" type="video/mp4">
+            </video>
         </div>
     </section>
     <section id="testimonies" class="h-full rem p-5 md:p-10 lg:p-40 bg-gradient-to-b from-blue-200 to-blue-500 text-gray-700 ">
@@ -239,7 +243,7 @@
             <!-- arrows -->
         </div>
     </section>
-    <section id="nav" class="p-5 md:p-10 flex flex-row bg-gradient-to-bl from-indigo-500 to-purple-500 gap-2">
+    <section id="nav" class="p-5 md:p-10 flex flex-row bg-gradient-to-bl from-indigo-500 to-purple-500 gap-2 content-between">
         <div>
             <div class="font-semibold md:font-bold text-base md:text-lg">Connect</div>
             <img>
@@ -261,7 +265,7 @@
             <p>Transactions</p>
             <p>Blog</p>
         </div>
-        <div>
+        <div class="flex flex-col lg:flex-row">
             <div class="font-light md:font-semibold">
                 <div class="text-base md:text-lg font-semibold md:font-bold">Quick links</div>
                 <p>Home</p>
@@ -281,7 +285,13 @@
             </div>
         </div> 
     </section>
-    <section class="bg-gradient-to-b from-indigo-500 to-purple-500">
+    <section class="bg-gradient-to-b from-indigo-500 to-purple-500 text-center">
+        <i class="fab fa-brands fa-facebook"></i>
+        <i class="fab fa-brands fa-twitter"></i>
+        <i class="fab fa-brands fa-instagram"></i>
+        <i class="fab fa-brands fa-youtube"></i>
+        <i class="fab fa-brands fa-linkedin"></i>
+
         <!-- icons a of youtube.. -->
     </section>
     <footer class="flex justify-center bg-indigo-500">
